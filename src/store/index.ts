@@ -1,4 +1,4 @@
-import create, { useStore } from "zustand";
+import create from "zustand";
 
 import { IUser } from "../api/types";
 // TypeScript types for the Zustand store
@@ -12,7 +12,7 @@ type Store = {
 
 //  A hook that has a lot of properties and methods for managing the Zustand store.
 // TODO: get rid og depricating function
-const userStore = create<Store>((set) => ({
+const useStore = create<Store>((set) => ({
   authUser: null,
   requestLoading: false,
   setAuthUser: (user) => set((state) => ({ ...state, authUser: user })),
