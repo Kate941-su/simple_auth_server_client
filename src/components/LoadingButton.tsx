@@ -9,7 +9,7 @@ type LoadingButtonProps = {
     children: React.ReactNode;
 };
 
- const LoadingButton: React.FC<LoadingButtonProps> = ({
+export const LoadingButton: React.FC<LoadingButtonProps> = ({
     textColor = "text-white",
     btnColor = "bg-ct-yellow-600",
     children,
@@ -34,5 +34,3 @@ type LoadingButtonProps = {
       </button>
     );
 }
-
-export default LoadingButton;
