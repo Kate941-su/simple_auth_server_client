@@ -5,6 +5,7 @@ import { authApi } from "../api/authApi";
 import { IUser } from "../api/types";
 import TwoFactorAuth from "../components/TwoFactorAuth";
 import useStore from "../store";
+import styles from "../constant/styles";
 
 const ProfilePage = () => {
 	const [secret, setSecret] = useState({
@@ -130,6 +131,29 @@ const ProfilePage = () => {
 								Setup 2FA
 							</button>
 						)}
+						{/* <form onSubmit={handleSubmit(onSubmitHandler)}>
+              <input
+                {...register("token")}
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-2/4 p-2.5"
+                placeholder="Authentication Code"
+              />
+              <p className="mt-2 text-xs text-red-600">
+                {errors.token ? errors.token.message : null}
+              </p>
+
+              <div className={styles.buttonGroup}>
+                <button
+                  type="button"
+                  onClick={closeModal}
+                  className={styles.buttonGrey}
+                >
+                  Close
+                </button>
+                <button type="submit" className={styles.buttonBlue}>
+                  Verify & Activate
+                </button>
+              </div>
+            </form> */}
 					</div>
 				</div>
 			</section>
